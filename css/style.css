@@ -143,6 +143,11 @@ ul{
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 500px;
+    display: flex;
+}
+
+.bottom-header .container.container-xs{
+    align-content: center;
 }
 
 .bottom-header .hero{
@@ -154,6 +159,10 @@ ul{
     color: black;
     padding: 10px 20px;
     
+}
+
+.bottom-header .hero p{
+    margin: 50px 0;
 }
 
 .bottom-header .hero button.black{
@@ -169,56 +178,27 @@ ul{
 
 section .container .row .col-small{
     padding-left: 50px;
+    align-content: center;
 
 }
 
-
-section .container .row.uno .col-big{
-    background-image: url(./img/item1.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 420px
-
+section .container .row.large .col{
+text-align: center;
 }
 
-section .container .row.due .col-big{
-    background-image: url(./img/item2.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 420px
-
-}
-
-section .container .row.tre .col-big{
-    background-image: url(./img/item3.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 420px
-
-}
-
-section .container .row.quattro.large .col{
-    background-image: url(./img/item4-big.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 550px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-section .container .row.quattro.large .col p{
+section .container .row.large .col p{
     margin-top: 10px;
     margin-bottom: auto;
 }
 
-section .container .row.quattro.large .col h2{
+section .container .row.large .col h2{
     background-image: url(./img/stars.svg);
+    background-size: cover;
+    width: 50%;
+    margin: auto;
 }
 
-section .container .row.quattro.large .col button{
+section .container .row.large .col button{
     margin: 20px;
     padding: 20px;
     border-radius: 20%;
