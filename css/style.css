@@ -1,0 +1,175 @@
+/* RESET */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* UTILS */
+
+.debug,
+.debug *{
+    min-height: 50px;
+    padding: 5px;
+    background-color: rgba(255, 0, 0, 0.219);
+    border: 1px dashed red;
+}
+
+.container{
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.container-xs{
+    max-width: 900px;
+}
+
+.wrapper{
+    min-height: 100vh;  /* l'unita di misura "vh" va ad indicare una parte della finestra che visualizziamo sul monitor. 1vh è un centesimo di finestra, quindi 100vh è tutta la finestra. con il "min" avanti gli diciamo di prendere ALMENO tutta la finestra. se la pagina dovra scrollare con min-height non avremo problemi */
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+.row{
+    display: flex;
+}
+
+.reverse{
+    flex-direction: row-reverse;
+}
+
+.col-big{
+    min-width: 60%;
+}
+
+.col-small{
+    min-width: 40%;
+}
+
+.col{
+    min-width: 70%;
+}
+
+.col-footer.big{
+    min-width: 30%;
+}
+
+.col-footer{
+    min-width: calc(70% / 4);
+}
+
+.white{
+    background-color: white;
+}
+
+.grey{
+    background-color: grey;
+}
+
+.black{
+    background-color: black;
+}
+
+/* HEADER */
+
+.page-header{
+    background-color: azure;
+}
+
+.page-header .top-header .container .row{
+    justify-content: center;
+    width: calc(100% / 2);
+    padding: 10px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-header .top-header .container .row .logo{
+    flex-grow: 1;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+.page-header .top-header .container .row .links{
+    flex-grow: 3;
+    background-color: yellow;
+    border: 1px solid black;
+
+}
+
+.bottom-header{
+    background-color: blue;
+    padding: 50px 0;
+}
+
+.bottom-header .hero{
+    background-color: pink;
+    min-height: 100px;
+}
+
+/* MAIN */
+
+.page-main section{
+    padding: 40px 0;
+}
+
+section .container .row{
+    min-height: 100px;
+}
+
+section .container .row .col-big{
+    background-color: blue;
+}
+
+section .container .row .col-small{
+    background-color: pink;
+
+}
+
+section .container .row.large{
+    min-height: 200px;
+}
+
+section .container .row.large .col{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: green;
+}
+
+
+
+/* FOOTER */
+
+.page-footer .container .row .col-footer.big{
+    background-color: pink;
+    border: 2px solid black;
+}
+
+.page-footer .container .row .col-footer{
+    background-color: chocolate;
+    border: 1px solid white;
+}
+
+.page-footer .container .row .col-footer{
+    /* debug */
+    min-height: 100px;
+}
