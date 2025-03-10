@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 img{
     max-width: 100%;
 }
@@ -85,19 +89,16 @@ ul{
     background-color: grey;
 }
 
-.black{
-    background-color: black;
-}
-
 /* HEADER */
 
 .page-header{
     background-color: azure;
 }
 
+
+
 .page-header .top-header .container .row{
     justify-content: center;
-    width: calc(100% / 2);
     padding: 10px 0;
     margin-left: auto;
     margin-right: auto;
@@ -105,25 +106,45 @@ ul{
 
 .page-header .top-header .container .row .logo{
     flex-grow: 1;
-    background-color: yellow;
-    border: 1px solid black;
+}
+
+.page-header .top-header .container .row .logo.button{
+    border-radius: 20%;
+    background-color: white;
+    padding: 2px 4px;
+    border: none;
 }
 
 .page-header .top-header .container .row .links{
     flex-grow: 3;
-    background-color: yellow;
-    border: 1px solid black;
+}
 
+.page-header .top-header .container .row .links ul{
+    display: flex;
+    justify-content: center;
+}
+
+.page-header .top-header .container .row .links ul li{
+    flex-grow: 1;
 }
 
 .bottom-header{
-    background-color: blue;
-    padding: 50px 0;
+    background-image: url(./img/jumbo.png);
+    min-height: 500px;
 }
 
 .bottom-header .hero{
-    background-color: pink;
-    min-height: 100px;
+    text-align: center;
+}
+
+.bottom-header .hero button{
+    border-radius: 20%;
+    color: black;
+}
+
+.bottom-header .hero button.black{
+    background-color: black;
+    color: white;
 }
 
 /* MAIN */
@@ -136,27 +157,37 @@ section .container .row{
     min-height: 100px;
 }
 
-section .container .row .col-big{
-    background-color: blue;
-}
-
 section .container .row .col-small{
-    background-color: pink;
+    padding-left: 50px;
 
 }
 
-section .container .row.large{
-    min-height: 200px;
+
+section .container .row.uno .col-big{
+    background-image: url(./img/item1.svg);
+    background-repeat: no-repeat;
+
 }
 
-section .container .row.large .col{
+section .container .row.due .col-big{
+    background-image: url(./img/item2.svg);
+    background-repeat: no-repeat;
+
+}
+
+section .container .row.tre .col-big{
+    background-image: url(./img/item3.svg);
+    background-repeat: no-repeat;
+
+}
+
+section .container .row.quattro.large .col{
+    background-image: url(./img/item4-big.svg);
+    background-repeat: no-repeat;
     margin-left: auto;
     margin-right: auto;
-    background-color: green;
+    min-height: 200px;
 }
-
-
-
 /* FOOTER */
 
 .page-footer .container .row .col-footer.big{
