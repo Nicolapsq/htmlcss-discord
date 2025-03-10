@@ -42,7 +42,7 @@ ul{
 }
 
 .container-xs{
-    max-width: 900px;
+    max-width: 1000px;
 }
 
 .wrapper{
@@ -55,6 +55,7 @@ ul{
 
 .row{
     display: flex;
+    min-height: 300px;
 }
 
 .reverse{
@@ -70,7 +71,7 @@ ul{
 }
 
 .col{
-    min-width: 70%;
+    min-width: 1000px;
 }
 
 .col-footer.big{
@@ -153,10 +154,6 @@ ul{
     padding: 40px 0;
 }
 
-section .container .row{
-    min-height: 100px;
-}
-
 section .container .row .col-small{
     padding-left: 50px;
 
@@ -178,6 +175,7 @@ section .container .row.due .col-big{
 section .container .row.tre .col-big{
     background-image: url(./img/item3.svg);
     background-repeat: no-repeat;
+    background-image: ;
 
 }
 
@@ -187,20 +185,46 @@ section .container .row.quattro.large .col{
     margin-left: auto;
     margin-right: auto;
     min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+section .container .row.quattro.large .col p{
+    margin-top: 10px;
+    margin-bottom: 200px;
+}
+
+section .container .row.quattro.large .col h2{
+    background-image: url(./img/stars.svg);
+}
+
+section .container .row.quattro.large .col button{
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20%;
+}
+
+
 /* FOOTER */
 
 .page-footer .container .row .col-footer.big{
-    background-color: pink;
     border: 2px solid black;
 }
 
 .page-footer .container .row .col-footer{
-    background-color: chocolate;
-    border: 1px solid white;
+    border: 1px solid black;
 }
 
-.page-footer .container .row .col-footer{
-    /* debug */
-    min-height: 100px;
+.page-footer .container .row ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.page-footer .container .row ul li{
+    margin-top: 20px;
+}
+
+.page-footer .container .row ul li img{
+    width: 20px;
 }
